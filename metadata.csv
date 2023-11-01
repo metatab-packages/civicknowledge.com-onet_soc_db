@@ -2,40 +2,41 @@ Declare,metatab-latest
 Title,O*NET SOC Database Data
 Description,Embeddings and titles for O*Net SOC
 Identifier,c87187ed-6a5d-48c0-a145-56f33fb33494
-Name,civicknowledge.com-onet_soc_titles-1.2.1
+Name,civicknowledge.com-onet_soc_titles-1.2.2
 Dataset,onet_soc_titles
 Origin,civicknowledge.com
 Time,
 Space,
 Grain,
 Variant,
-Version,1.2.1
+Version,1.2.2
 Version.Major,1
 Version.Minor,2
-Version.Patch,1
+Version.Patch,2
 Created,2023-09-21T15:19:04
-Modified,2023-10-17T19:55:45
+Modified,2023-10-31T00:15:25
 Giturl,https://github.com/CivicKnowledge/cmech_data.git
-
+""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
-
+""
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
-
+""
 Section,References,Name,Description,
 Reference,metapack+s3://linkedin.civicknowledge.com/packages/civicknowledge.com-onet_soc-embed-1.2.4.csv,soc_embed_pkg,,
 Reference,https://www.onetcenter.org/dl_files/database/db_27_3_excel/Occupation%20Data.xlsx,onet_occ,ONet Occupation titles and descriptions,
 Reference,https://www.onetcenter.org/dl_files/database/db_20_1_excel/Sample%20of%20Reported%20Titles.xlsx,onet_rtitles,O*Net alternate reported titles,
 Reference,https://www.onetcenter.org/dl_files/database/db_28_0_excel/Alternate%20Titles.xlsx,onet_atitles,O*Net formal alternate titles,
-
+""
 Section,Resources,Name,Description,
 Datafile,notebooks/build.ipynb#titles,titles,Extended job titles for SOC,
-
+""
 Section,Schema,DataType,AltName,Description,Has_Codes
 Table,titles,,,,
 Table.Column,soc,text,,,
 Table.Column,title,text,,,
+Table.Column,source,text,,,
 Table,titles_edf,,,,
 Table.Column,e0,number,,,
 Table.Column,e1,number,,,
